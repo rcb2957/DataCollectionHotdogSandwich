@@ -1,0 +1,10 @@
+Question: Of the TDPs and Interns, does year entering M&T affect whether or not a person perceives
+          a hotdog to be a sandwich?
+
+2020 TDPs: Don't think hot dog is a sandwich (Mostly)
+2021 TDPs: Do think hot dog is a sandwich (Mostly)
+2022 Interns: Toss Up (Even Among Juniors and Seniors)
+
+Only one sophomore and one grad student, so sample size is not large enough for these two groups
+
+Gather numbers and percentages to formulate bar graph or pie chart
