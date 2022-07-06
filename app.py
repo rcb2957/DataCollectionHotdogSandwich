@@ -11,7 +11,7 @@ def main():
 
 def display_visual(df):
     # look at examples from https://matplotlib.org/
-    intern = [i for i in df if i['cohort'] == '2022 Intern' and i['hotdog'] == 1];
+    intern = [x for x in df if x["cohort"] == '2022 Intern']; #[x for x in df if x['cohort'] == '2022 Intern' and x['hotdog'] == 1];
     tdp2021 = [t for t in df if t['cohort'] == '2021 TDP' and t['hotdog'] == 1];
     tdp2020 = [t for t in df if t['cohort'] == '2020 TDP' and t['hotdog'] == 1];
     x = ['2022 Intern', '2021 TDP', '2020 TDP'];
@@ -30,16 +30,16 @@ def load_data():
         df = df.drop(label, axis=1)
 
     # replace questions with more convenient, one word keys
-    column_names = {'What\'s your office location': 'location', 
-                    'Are you an Intern or a TDP?': 'cohort', 
-                    'What year are you in school?': 'school_year', 
-                    'Is the grass really greener on the other side?': 'greener', 
-                    'Is a hotdog really a sandwich?': 'hotdog', 
-                    'Backend or Frontend?': 'end', 
-                    'Is water wet?': 'water', 
-                    'Do straws have two holes or one?': 'straw', 
-                    'Is it Gif or Jif?': 'moving_image', 
-                    'Is cereal soup?': 'soup', 
+    column_names = {'What\'s your office location': 'location',
+                    'Are you an Intern or a TDP?': 'cohort',
+                    'What year are you in school?': 'school_year',
+                    'Is the grass really greener on the other side?': 'greener',
+                    'Is a hotdog really a sandwich?': 'hotdog',
+                    'Backend or Frontend?': 'end',
+                    'Is water wet?': 'water',
+                    'Do straws have two holes or one?': 'straw',
+                    'Is it Gif or Jif?': 'moving_image',
+                    'Is cereal soup?': 'soup',
                     'If you are at a restaurant and your waiter doesn\'t come back, are you the waiter?': 'self_service',
                     'Since tomatoes are technically fruits, does that make ketchup jam?': 'ketchup', 
                     'Does pineapple belong on pizza?': 'pineapple', 
